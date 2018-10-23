@@ -9,5 +9,5 @@ i am index.md
 <p><br><b>My Blog</b></p>
 
 {% for post in site.posts %}
-<li><span>{{ post.date | date_to_string }}</span></li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
